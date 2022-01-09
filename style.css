@@ -1,4 +1,117 @@
-.test {
-    color: blue;
+body {
+    background: lightgray;
+    font-family: 'Lato', sans-serif;
+    margin-top: 40px;
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.container {
+    width: 100%;
+    position: relative;
+    max-width: 1100px;
+    min-height: 1000px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 50px;
+}
+
+.left_content{
+    position: relative;
+    background: gray;
+    padding: 40px;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+.left_content img {
+    border-radius: 50%;
+    position: relative;
+    width: 250px;
+}
+
+.left_content h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+.left_content h2 {
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    border-color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+.contacts {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.skills{
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.language{
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.education{
+
+}
+.right_content{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;    
+    color: gray;
+    width: 600px;
+}
+.about{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.year{
+    position: absolute;
+    width: 1100px;
+    
+
+    
+    
+    background-color: green;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+
+
+.text_rightH1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 25%;
+}
+.text_rightH2 {
     font-size: 20px;
+    padding-bottom: 5px;
+    padding-left: 25%;
+}
+.text_right_normal{
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-left: 25%;
 }
