@@ -4,10 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet" \>
-    <title>Test</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+    <title>cv</title>
 </head>
 <body>
-    <p class="test">Тестовый тест</p>
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#sample_Code" class="nav-link">Sample Code</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            </ul>
+          </nav>
+    </header>
+<main>
+    <div class="container">
+        <div class="left_content">
+            <div class="photo">
+                <img src="assets/img/image1.2.jpg" alt="my photo">
+            </div>
+                <h1>Alexey Medvedev</h1>
+                <h2>web developer</h2>
+            <div class="contacts" id="contacts">
+                <h3>Contacts</h3>
+                <p><span>City: </span>Tambov</p>
+                <p><span>telegram: </span>@spiritlm</p>
+                <p><span>discord: </span>spiritlm#6028</p>
+            </div>
+            <div class="language">
+                <h3>Language</h3>
+                <p>A1 - I read and translate with a dictionary</p>
+                <p>Russian: Native</p>
+                
+            </div>
+            <div class="skills" id="skills">
+                <h3>Skills</h3>
+                <p> Basic Object-oriented programming skills (Java, Python).</p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p>Higher education in the specialty "Organization and information security technologies"</p>
+            </div>
+        </div>
+        <div class="right_content">
+            <div class="about">
+            <h2>About me</h2>
+            <p>At the moment I work as a 
+                network-system administrator 
+                in a large gas industry company. 
+                In the near future I plan to change 
+                my specialty in the direction of backend or frontend 
+                development. 
+                I learn quickly and assimilate new information.</p>
+            </div>
+            <div class="sample_code" id="sample_Code">
+                <h2>Sample code</h2>
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">import</span> java.text.DecimalFormat;
+<span class="hljs-keyword" style="color: rgb(0, 0, 255);">import</span> java.util.Scanner;
+    <span class="hljs-keyword" style="color: rgb(0, 0, 255);">public</span> <span class="hljs-class"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">class</span> <span class="hljs-title" style="color: rgb(163, 21, 21);">Solving</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">public</span> <span class="hljs-keyword" style="color: rgb(0, 0, 255);">static</span> <span class="hljs-keyword" style="color: rgb(0, 0, 255);">void</span> <span class="hljs-title" style="color: rgb(163, 21, 21);">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                Diskriminant Diskr = <span class="hljs-keyword" style="color: rgb(0, 0, 255);">new</span> Diskriminant();
+                    
+                Scanner in = <span class="hljs-keyword" style="color: rgb(0, 0, 255);">new</span> Scanner(System.in);
+                System.out.print(<span class="hljs-string" style="color: rgb(163, 21, 21);">"Введите а: "</span>);
+                <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> a = in.nextDouble();
+                    
+                System.out.print(<span class="hljs-string" style="color: rgb(163, 21, 21);">"Введите b: "</span>);
+                <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> b = in.nextDouble();
+                    
+                System.out.print(<span class="hljs-string" style="color: rgb(163, 21, 21);">"Введите c: "</span>);
+                <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> c = in.nextDouble();   
+                in.close();
+                    
+                    <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> d = (Math.pow(b, <span class="hljs-number">2</span>)) - (<span class="hljs-number">4</span> * a * c);
+                    
+                    DecimalFormat decimalFormat = <span class="hljs-keyword" style="color: rgb(0, 0, 255);">new</span> DecimalFormat(<span class="hljs-string" style="color: rgb(163, 21, 21);">"#.###"</span>);
+                        String result = decimalFormat.format(d);
+                        System.out.println((<span class="hljs-string" style="color: rgb(163, 21, 21);">"Дискриминант равен: "</span> + result));
+                    
+                <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (d &gt; <span class="hljs-number">0</span>) {
+                    <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> x1 = (-b + Math.sqrt(d) / (<span class="hljs-number">2</span> * a));
+                        String resultX1 = decimalFormat.format(x1);
+                        System.out.println((<span class="hljs-string" style="color: rgb(163, 21, 21);">"x1 = : "</span> + resultX1));
+                    
+                        <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> x2 = (-b - Math.sqrt(d) / (<span class="hljs-number">2</span> * a));
+                            String resultX2 = decimalFormat.format(x2);
+                            System.out.println((<span class="hljs-string" style="color: rgb(163, 21, 21);">"x2 = : "</span> + resultX2));
+                    
+                } <span class="hljs-keyword" style="color: rgb(0, 0, 255);">else</span> <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (d == <span class="hljs-number">0</span>) {
+                    <span class="hljs-keyword" style="color: rgb(0, 0, 255);">double</span> x1 = (-b + Math.sqrt(d) / (<span class="hljs-number">2</span> * a));
+                    System.out.println(<span class="hljs-string" style="color: rgb(163, 21, 21);">"x1 = "</span> + x1);
+                }
+                    <span class="hljs-keyword" style="color: rgb(0, 0, 255);">else</span> {
+                        System.out.println(<span class="hljs-string" style="color: rgb(163, 21, 21);">"Корней нет"</span>);
+                }
+            }
+        }</pre>            
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="year">
+        <span>2022</span><a href="https://github.com/Spiritlm">  SpiritLM </a>
+    </div>
+        <div class="rolling_scope">
+            <a href=https://rs.school rel="rs_school"><img src="./assets/img/rs_school.svg" alt="rs_school"></a>
+        </div>    
+</footer>
 </body>
 </html>
