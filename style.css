@@ -14,6 +14,7 @@ header{
     position: relative;
     justify-content: flex-end;
     width: 1000px;
+    max-width: 1000px;
     background:  gray;
     align-self: center;
     box-shadow: 1px 0px 3px black;
@@ -26,9 +27,15 @@ header{
 .nav-list li{
     display:inline;
     padding-right: 40px;
-    
-    
 }
+.nav-list li a:focus{
+    background-color: #BAE498;
+}
+.nav-link{
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+
 main {
     align-self: center;
 }
@@ -122,34 +129,19 @@ footer{
     padding: 40px;
     font-size:1.5em;
     font-weight: bold;
-    
-    
+}
+.year a{
+    color: black;
+}
+.year a:focus{
+    background-color: rgb(78, 78, 78);
+}
+.year a:visited{
+    text-decoration: none;
+    color: black;
+
 }
 .rolling_scope{
     padding: 40px;
-}
-
-
-
-
-
-
-
-
-
-.text_rightH1 {
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-left: 25%;
-}
-.text_rightH2 {
-    font-size: 20px;
-    padding-bottom: 5px;
-    padding-left: 25%;
-}
-.text_right_normal{
-    font-size: 15px;
-    padding-bottom: 20px;
-    padding-left: 25%;
+    width: 200px;
 }
